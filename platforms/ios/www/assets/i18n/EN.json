@@ -1,0 +1,21 @@
+{
+    "slogan_text":"Chaange Title",
+    "menu_text":"Menu",
+    "fullname_text":"FullName",
+    "language_text" : "Language",
+    "gender_male_text":"Male",
+    "gender_female_text":"Female",
+    "en":"Eng",
+    "th":"Thai",
+
+    "jobs"      : "MyJobs",
+    "queue"     : "Queue",
+    "groupUnder": "Groups",
+    "cashier"   : "Cashier",
+    "history"   : "History",
+    "favorite"  : "Favorite",
+    "premium"   : "Premium",
+    "notification" : "Notification",
+    "help"      : "Help",
+    "logout"    :"Logout"
+}

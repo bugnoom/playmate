@@ -1,0 +1,23 @@
+
+{
+    "slogan_text":"เราพร้อมจะค้นหามืออาชีพให้กับคุณ",
+    "menu_text":"เมนู",
+    "fullname_text":"ชื่อ-นามสกุล",
+    "language_text" : "ภาษา",
+    "gender_male_text":"ชาย",
+    "gender_female_text":"หญิง",
+    "en":"อังกฤษ",
+    "th":"ไทย",
+
+
+    "jobs"      : "เลือกรับงาน",
+    "queue"     : "จัดคิวงาน",
+    "groupUnder": "สังกัด",
+    "cashier"   : "ช่องทางการเงิน",
+    "history"   : "ประวัติรายการ",
+    "favorite"  : "คนที่ติดตาม",
+    "premium"   : "สิทธิพิเศษ",
+    "notification" : "การแจ้งเตือน",
+    "help"      : "แนะนำการใช้งาน",
+    "logout"    :"ออกจากระบบ"
+}

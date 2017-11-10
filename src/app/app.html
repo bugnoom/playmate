@@ -1,0 +1,40 @@
+<ion-menu [content]="myNav" side="left" id="leftMenu">
+    <ion-header class="profileMenu">
+        <div class="bkimage" [ngStyle]="{'background-image': 'url(' + profilepicURL + ')'}">
+            </div>
+        <div class="proflieContent">
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-5>
+                       <img src={{profilepicURL}} width="100%" height="auto"/>
+                    </ion-col>
+                    <ion-col style="padding-top:15px;">
+                        <p style="margin-bottom:10px;">{{username}}</p>
+                        <p style="vertical-align: center;"><img src="assets/menu_icon/tab-menu-icon-11.png" style="border:0px;width:14%;height:14%;margin-right:4%;" />:1000 </p>
+                        <p style="vertical-align: center;"><img src="assets/menu_icon/tab-menu-icon-11.png" style="border:0px;width:14%;height:14%;margin-right:4%;" />:3000 </p>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+            
+        </div>
+    </ion-header>
+
+    <ion-content >
+
+        <ion-list>
+            <button class="mymenu" ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)">
+              <span class="mymenuname"> <img class="myicon" src="assets/menu_icon/tab-menu-icon-{{p.icon}}.png"/>
+               {{p.title | translate }}</span>
+               
+            </button>
+            <button class="mymenu" ion-item menuClose (click)="doFbLogout()">
+               <span class="mymenuname"> <img class="myicon" src="assets/menu_icon/tab-menu-icon-10.png"/>
+               {{ "logout" | translate }}
+               </span>
+            </button>
+        </ion-list>
+    </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #myNav swipeBackEnabled="false"></ion-nav>

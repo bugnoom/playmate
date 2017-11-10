@@ -1,0 +1,17 @@
+<!-- Generated template for the FooterComponent component -->
+<ion-toolbar no-padding >
+    <ion-segment [(ngModel)]="navmenutxt">
+      <ion-segment-button value="home" (ionSelect)="openPage('home')">
+        <img src="assets/img_home/icon-home-01.png" height="100%;"/>
+      </ion-segment-button>
+      <ion-segment-button value="list" (ionSelect)="openPage('list')">
+        <img src="assets/img_home/icon-list-02.png" height="100%;"/>
+      </ion-segment-button>
+      <ion-segment-button value="msg" (ionSelect)="openPage('msg')">
+       <img src="assets/img_home/icon-massenger-03.png" height="100%;"/>
+      </ion-segment-button>
+       <ion-segment-button value="profile" (ionSelect)="openPage('profile')">
+       <img src="assets/img_home/icon-user-04.png" height="100%;"/>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>

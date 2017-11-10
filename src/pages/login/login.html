@@ -1,0 +1,30 @@
+<ion-content padding>
+  <ion-grid style="justify-content:center;">
+    <ion-grid style="justify-content:top;width:65%;height:auto"> 
+      <img src="assets/Logo.png" />
+      </ion-grid>
+    <p style="justify-content:top;text-align:center;color:#FFF;">
+      {{'slogan_text' | translate}}</p>
+    <form (ngSubmit)="loginForm()">
+      <ion-item style="margin-bottom:5px;border-radius:10px;">
+
+        <ion-input type="email" [(ngModel)]="email" name="email" placeholder="Email address"></ion-input>
+      </ion-item>
+      <ion-item style="margin-bottom:10px;border-radius:10px;">
+        <ion-input type="password" [(ngModel)]="password" name="password" placeholder="Password"></ion-input>
+      </ion-item>
+      <button ion-button type="submit" color="secondary" style="font-weight: bold;border-radius:10px;" block>LOGIN</button>
+    </form>
+
+
+    <p style="font-size:80%;color:#FFF;text-align:center;"><a (click)="register()" style="color:#FFF;text-decoration:underline">สร้างบัญชีใหม่</a> หรือ <a style="color:#FFF;text-decoration:underline;">เข้าระบบด้วย</a></p>
+    <button ion-button block color="primary" (click)="fblogin()">Facebook Login</button>
+  </ion-grid>
+
+<ion-item>
+    <ion-label>{{'language_text'|translate}}</ion-label>
+    <ion-select [(ngModel)]="currentLang" (ionChange)="translate.use(currentLang)">
+      <ion-option *ngFor="let language of languages" [value]="language" [selected]="language===translate.currentLang">{{language}}</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-content>

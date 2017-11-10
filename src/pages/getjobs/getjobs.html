@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content  text-center no-padding>
+  <ion-grid class="getjobs" no-padding>
+    <ion-row>
+      <ion-col>
+        <div (click)="goto('profile')"><img src="assets/getjobs/profile_icon.jpg" ></div>
+        <p>&nbsp;</p>
+         <div (click)="goto('getjob')"><img src="assets/getjobs/getjobs_icon.jpg" ></div>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+</ion-content> 
+
+<ion-footer no-border no-padding>
+  <footer [footnavmenu]="footnavmenu"></footer>
+</ion-footer>

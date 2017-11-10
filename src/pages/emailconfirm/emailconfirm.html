@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar class="mybackbtn">
+   
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+ <ion-grid style="justify-content:center;height:100%">
+   <p style="color:#FFFFFF;font-size:90%;text-align:center;"> กรุณากรอกรหัส 6 หลักเพื่อเข้าสู่ Playmate</p>
+   <form (ngSubmit)="confirmcode()">
+      <ion-item style="margin-bottom:5px;border-radius:10px;">
+        <ion-input type="text" [(ngModel)]="code" name="text" placeholder="Code 6 Digit"></ion-input>
+      </ion-item>
+      <p><button ion-button small type="submit" color="secondary" style="font-weight: bold;border-radius:10px;width:89%;margin:auto;" block>Confirm</button></p>
+   </form>
+      <button ion-button small color="primary"  (click)="resendcode()" style="border-radius:10px;">
+        <div><ion-icon ios="ios-undo" md="md-undo"></ion-icon> Resend</div></button>
+ </ion-grid>
+</ion-content>

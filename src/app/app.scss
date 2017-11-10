@@ -1,0 +1,103 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+@font-face {
+  font-family: "sukhumvit";
+  src: url("../assets/fonts/sukhumvit/sukhumvitset-text-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body .content{
+  background-image: url('../assets/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*{font-family: $font-sukhumvit}
+ion-header ion-icon.back-button-icon.icon {
+    color: #3311FF;
+}
+ion-header .back-button-text{
+   font-family: $font-sukhumvit;
+   font-size:60%;
+}
+ion-header .toolbar-background{
+  border-width: 0px !important;
+}
+.mymenu{
+  font-size: 100%;
+  background: transparent;
+  border-bottom: 1px solid #ffffff;
+  color:#FFFFFF;
+  padding-left: 0px;
+}
+.md .mymenu{
+  font-size: 125%;
+}
+.mymenuname{
+  padding-left: 16px;
+}
+.myicon{
+  width:10%;
+  margin-right:15px;
+  margin-bottom:-5px;
+}
+.ios .profileMenu{
+  height:23vh;
+  position:relative;
+ border-bottom: 1px solid #777777;
+}
+.md .profileMenu{
+  height:18vh;
+  position:relative;
+ border-bottom: 1px solid #777777;
+}
+.bkimage{
+  width:100%;
+  height:100%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  text-align: center;
+  background-position: center center;
+}
+
+.proflieContent{
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  height:auto;
+  margin-top:5%;
+}
+.proflieContent img{
+  border-radius: 50%;
+  width:100%;
+  height: auto;
+  border:2px solid #FFFFFF;
+}
+.proflieContent p{
+  color: #FFFFFF;
+  font-size:110%;
+  margin: 0px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+.md .proflieContent p{
+  font-size:125%;
+}

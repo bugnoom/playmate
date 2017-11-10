@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar class="mybackbtn">
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+ <ion-grid style="justify-content:center;height:100%">
+   <p style="color:#FFFFFF;font-size:90%;text-align:center;"> กรุณากรอก Email เพื่อยืนยันการสมัครสมาชิก</p>
+   <form (ngSubmit)="registerEmail()">
+      <ion-item style="margin-bottom:5px;border-radius:10px;">
+        <ion-input type="email" [(ngModel)]="email" name="email" placeholder="Email address"></ion-input>
+      </ion-item>
+      <button ion-button small type="submit" color="secondary" style="font-weight: bold;border-radius:10px;width:89%;margin:auto;" block>Confirm</button>
+   </form>
+ </ion-grid>
+</ion-content>

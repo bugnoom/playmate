@@ -1,0 +1,44 @@
+page-home {
+
+}
+.section{
+    height:21vh;
+    width:100%;
+    margin:0px 0px 0px 0px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    color:#FFFFFF;
+    position: relative;
+}
+.section-button{
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-color: transparent;
+    width:30%;
+    height:7vh;
+    font-size:150%;
+    color:#FFFFFF;
+    position: absolute;
+}
+.section-img{
+    width:65%;
+    position: absolute;
+    bottom: 0;
+}
+.section-text{
+    position:absolute;
+}
+.section-h1{
+    font-size:1em;
+}
+.section-h2{
+    font-size:1.5em;
+    font-weight: bold;
+    font-family: "roboto"
+
+}
+.segment-ios .segment-button{
+    border:0px !important;
+    padding:1px;
+    border-radius: 0px !important;
+}

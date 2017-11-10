@@ -1,0 +1,21 @@
+header {
+
+}
+.md .hamberger-menu{
+    margin-top:25px;
+    color:aqua;
+    position:absolute;
+}
+.ios .hamberger-menu {
+    margin-top:0px;
+    color:aqua;
+    position:absolute;
+}
+.md .hamberger-menu .text-hamberger-menu{
+    color:#fff;
+    font-size:18pt;
+}
+.ios .hamberger-menu .text-hamberger-menu{
+    color:#fff;
+    font-size:14pt;
+}
