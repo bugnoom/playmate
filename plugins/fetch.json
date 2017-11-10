@@ -58,15 +58,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-statusbar": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/apache/cordova-plugin-statusbar.git",
-            "subdir": "."
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-inappbrowser": {
         "source": {
             "type": "registry",
@@ -84,5 +75,13 @@
         "variables": {
             "XWALK_MODE": "lite"
         }
+    },
+    "cordova-plugin-statusbar": {
+        "source": {
+            "type": "registry",
+            "id": "https://github.com/apache/cordova-plugin-statusbar.git"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

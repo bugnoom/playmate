@@ -35,13 +35,13 @@
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.redonion.playmate"
         },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.redonion.playmate"
-        },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.redonion.playmate"
         },
         "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.redonion.playmate"
+        },
+        "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "com.redonion.playmate"
         }
     },
